@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mise en situation GenV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body class="container mt-5">
     <div class="border p-5">
         <h1 class="text-center mb-5">Gestion des Utilisateurs</h1>
@@ -20,7 +22,7 @@
 
                 <div class="mb-3">
                     <label for="userName" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="userName" placeholder="Entrez le nom" required>
+                    <input type="text" class="form-control" id="userid" placeholder="Entrez le nom" required>
                 </div>
 
                 <div class="mb-3">
@@ -30,7 +32,8 @@
 
                 <div class="mb-3">
                     <label for="userAge" class="form-label">Âge</label>
-                    <input type="number" class="form-control" id="userAge" placeholder="Entrez l'âge" min="1" max="150" required>
+                    <input type="number" class="form-control" id="userAge" placeholder="Entrez l'âge" min="1" max="150"
+                        required>
                 </div>
 
                 <div class="d-flex gap-2 flex-column">
@@ -60,18 +63,7 @@
                         </tr>
                     </thead>
                     <tbody id="userTableBody">
-                        <tr>
-                            <td>
-                                <span class="user-name" data-bs-toggle="modal" data-bs-target="#userDetailModal">
-                                    Tayeb SOUINI
-                                </span>
-                            </td>
-                            <td>TayebSOUINI.2@email.com</td>
-                            <td>30</td>
-                            <td>
-                                <button class="btn btn-sm btn-danger w-100">Supprimer</button>
-                            </td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
@@ -79,7 +71,8 @@
     </div>
 
     <!-- Modal Bootstrap 5 pour les détails -->
-    <div class="modal fade" id="userDetailModal" tabindex="-1" aria-labelledby="userDetailModalLabel" aria-hidden="true">
+    <div class="modal fade" id="userDetailModal" tabindex="-1" aria-labelledby="userDetailModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -101,7 +94,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        
+
     </script>
 </body>
+
 </html>
